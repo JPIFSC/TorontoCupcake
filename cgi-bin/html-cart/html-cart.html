@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
+    
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TCFWH7NT');</script>
-    <!-- End Google Tag Manager -->
+    
 
-    <!-- Meta Tags for SEO SMO -->
+    
     <meta name="description" content="Review your order and purchase delicious cupcakes from Toronto Cupcake. Enjoy a seamless ordering experience for the sweetest treats in town.">
     <meta name="keywords" content="cupcakes, gourmet cupcakes, bakery, Toronto, Toronto Cupcake, cupcake delivery">
-    <!-- Open Graph Meta Tags (OG) for Social Media Optimization -->
+    
     <meta property="og:title" content="Toronto Cupcake - Gourmet Cupcakes Delivered to Your Doorstep">
     <meta property="og:description" content="Toronto Cupcake offers freshly baked gourmet cupcakes daily.">
     <meta property="og:image" content="https://www.torontocupcake.com/images/default-image.jpg">
     <meta property="og:url" content="https://www.torontocupcake.com">
     <meta property="og:type" content="website">
 
-    <!-- Meta for twitter -->
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Toronto Cupcake - The Sweetest Bakery in Town">
     <meta name="twitter:description" content="Enjoy a selection of gourmet cupcakes at Toronto Cupcake.">
@@ -29,13 +29,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Toronto Cupcake | Your Shopping Cart</title>
     <link rel="stylesheet" href="../../css/torontocupcake.css">
-    <!-- <link rel="stylesheet" href="../../css/torontocupcake.css"> -->
+    
     <link rel="shortcut icon" href="../../favicon.ico" />
     <link rel="canonical" href="../../index.html" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-    <!-- Organization Schema -->
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -52,7 +52,7 @@
     }
     </script>
 <style>
-    /* Table styles for cart display */
+    
     .cart-table  {
         width: 100%;
         border-collapse: collapse;
@@ -79,7 +79,7 @@
         border-top: 2px solid #8C1822;
     }
     
-    /* Datepicker styles */
+    
     .ui-datepicker {
         background: white;
         border: 1px solid #ccc;
@@ -101,7 +101,7 @@
         color: #333;
     }
     
-    /* Form layout */
+    
     .form-section {
         display: flex;
         flex-wrap: wrap;
@@ -135,7 +135,7 @@
         color: #333;
     }
 
-    /* Important section styling */
+    
     .important-section {
         margin-top: 20px;
         padding: 15px;
@@ -144,7 +144,7 @@
         border-radius: 8px;
     }
     
-    /* Floating label for inputs */
+    
     .floating-label {
         position: absolute;
         top: 10px;
@@ -174,7 +174,7 @@
         color: #333;
     }
 
-    /* Delivery time section styling */
+    
     #delivery-time-section {
         position: relative;
         border: 2px solid #888;
@@ -187,10 +187,10 @@
     #delivery-time-section:focus-within {
         border-color: #8C1822;
     }
-    /* Updated styling for Delivery Time section */
-    /* Delivery Time Container Styling */
+    
+    
     .delivery-time-container {
-        background-color: #fefefe; /* Matching other input backgrounds */
+        background-color: #fefefe; 
         border: 2px solid #888;
         border-radius: 8px;
         padding: 15px;
@@ -198,20 +198,20 @@
         margin-top: 15px;
     }
 
-    /* Align the "Delivery Times" label with the border */
+    
     #delivery-time-header {
         position: absolute;
         top: -10px;
         left: 12px;
         padding: 0 4px;
-        background-color: #fefefe; /* Background to blend with the container */
+        background-color: #fefefe; 
         font-size: 1rem;
         color: #888;
     }
 
-    /* Full-width styling for Pickup Time input to match label */
+    
     #pickup-time {
-        width: 100%; /* Ensures input spans full width */
+        width: 100%; 
         padding: 10px;
         font-size: 1rem;
         border: 2px solid #888;
@@ -219,7 +219,7 @@
         box-sizing: border-box;
     }
 
-    /* Floating label for pickup time input */
+    
     #pickup-time ~ .floating-label {
         left: 12px;
         color: #888;
@@ -228,7 +228,7 @@
         transition: 0.2s ease all;
     }
 
-    /* Adjust floating label when input is focused or contains text */
+    
     #pickup-time:focus ~ .floating-label,
     #pickup-time:not(:placeholder-shown) ~ .floating-label {
         top: -10px;
@@ -236,7 +236,7 @@
         color: #333;
     }
 
-    /* Radio options styling for alignment */
+    
     .radio-options {
         display: flex;
         flex-direction: column;
@@ -252,7 +252,7 @@
     .radio-options input[type="radio"] {
         transform: scale(1.1);
     }
-    /* Additional Delivery or Pickup Date styling */
+    
     .input-container {
         position: relative;
         margin-top: 20px;
@@ -260,7 +260,7 @@
         max-width: 100%;
     }
 
-    /* Inline label for "Delivery or Pickup Date" */
+    
     .input-container .inline-label {
         position: absolute;
         top: -0.6em;
@@ -275,7 +275,7 @@
         pointer-events: none;
     }
 
-    /* Adjust label position when input is focused or contains text */
+    
     .input-container .floating-input:focus ~ .inline-label,
     .input-container .floating-input:not(:placeholder-shown) ~ .inline-label {
         top: -1.1em;
@@ -284,38 +284,38 @@
         color: #333;
     }
 
-    /* Instructions styling below date picker */
+    
     .form-instructions {
         font-size: 0.85rem;
         color: #666;
         margin-top: 5px;
     }
 
-    /* Radio buttons group styling */
+    
     .radio-group {
     display: flex;
     gap: 15px;
     margin-top: 10px;
     font-size: 1rem;
     color: #333;
-    flex-wrap: wrap; /* This allows wrapping to a new line */
+    flex-wrap: wrap; 
     }
-    /* Notification container */
+    
     .notification {
         background-color: #D95A4E;
-        color: #ffffff; /* White text */
+        color: #ffffff; 
         padding: 15px;
         margin: 15px 0;
-        border-radius: 8px; /* Rounded corners */
+        border-radius: 8px; 
         font-size: 1rem;
         line-height: 1.4;
         display: block;
         justify-content: space-between;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        max-width: 100%; /* Responsive width */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        max-width: 100%; 
     }
 
-    /* Icon or close button styling within notification, if needed */
+    
     .notification .icon,
     .notification .close-btn {
         margin-left: 10px;
@@ -324,7 +324,7 @@
         font-size: 1.2rem;
     }
 
-    /* Ensure the text wraps on smaller screens */
+    
     @media (max-width: 768px) {
         .notification {
             font-size: 0.9rem;
@@ -333,12 +333,12 @@
     }
     .notification p {
         display: block;
-        margin: 0; /* Reset margin if thereâs unwanted spacing */
+        margin: 0; 
     }
     .notification, .notification p {
-        color: #ffffff !important; /* Ensure text is white */
+        color: #ffffff !important; 
     }
-    /* Ensure form-row uses flexbox for better alignment */
+    
     .form-row {
         display: flex;
         flex-direction: column;
@@ -346,11 +346,11 @@
         margin-bottom: 20px;
     }
 
-    /* Adjust label styling for inline alignment */
+    
     .inline-label {
         position: absolute;
-        top: -8px; /* Adjust as necessary to align with the border */
-        left: 12px; /* Aligns with input padding */
+        top: -8px; 
+        left: 12px; 
         font-size: 0.85rem;
         color: #888;
         background-color: white;
@@ -360,9 +360,9 @@
         z-index: 1;
     }
 
-    /* Adjust input styling to have consistent padding */
+    
     .form-input {
-        padding: 16px 10px 10px; /* Adjusted top padding for label space */
+        padding: 16px 10px 10px; 
         font-size: 1rem;
         border: 2px solid #888;
         border-radius: 8px;
@@ -372,12 +372,12 @@
         transition: border-color 0.3s;
     }
 
-    /* Hover and focus state for better UI feedback */
+    
     .form-input:focus {
         border-color: #8C1822;
     }
 
-    /* Adjust floating behavior of label when input is focused */
+    
     .form-input:focus ~ .inline-label,
     .form-input:not(:placeholder-shown) ~ .inline-label {
         top: -8px;
@@ -395,23 +395,23 @@
         transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
     }
 
-    /* Hover effect with shadow */
+    
     .icon-delete:hover {
-        transform: scale(1.1);        /* Slightly enlarges the icon */
-        opacity: 0.8;                 /* Reduces opacity for a soft effect */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds shadow on hover */
+        transform: scale(1.1);        
+        opacity: 0.8;                 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
     }
     .price-column, .amount-column {
         text-align: right;
-        font-family: Tahoma, monospace; /* Monospace for number alignment */
+        font-family: Tahoma, monospace; 
         padding-right: 10px;
     }
     .price-column:hover, .amount-column:hover {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); 
     }
     .table-wrapper {
         display: flex;
-        justify-content: flex-end; /* Aligns to the right on large screens */
+        justify-content: flex-end; 
         padding: 10px;
         box-sizing: border-box;
         width: 100%;
@@ -443,7 +443,7 @@
 }
 
 .totals-table .item-column {
-    width: 200px; /* Increase this if necessary */
+    width: 200px; 
     text-align: left;
     padding-left: 10px;
     white-space: nowrap;
@@ -455,35 +455,35 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px); /* Screen reader only */
+    clip: rect(1px, 1px, 1px, 1px); 
 }
 .totals-table .amount-column,
 .totals-table .price-column {
-    min-width: 80px; /* Minimum width to prevent wrapping */
+    min-width: 80px; 
     text-align: right;
     padding-right: 10px;
 }
 
-    /* Responsive Design: Center table on smaller screens */
+    
     @media (max-width: 768px) {
         .table-wrapper {
-            justify-content: center; /* Center-aligns on mobile */
+            justify-content: center; 
             padding: 0;
         }
         .totals-table {
-            max-width: 100%; /* Full width on mobile */
+            max-width: 100%; 
             margin: auto;
         }
     }
     .actions-container {
         display: flex;
-        justify-content: space-between; /* Distribute buttons evenly */
-        gap: 10px; /* Space between buttons */
-        margin-top: 20px; /* Space above the buttons */
+        justify-content: space-between; 
+        gap: 10px; 
+        margin-top: 20px; 
     }
 
     .actions-container form {
-        flex: 1; /* Makes each button take up equal space */
+        flex: 1; 
     }
     
 </style>
@@ -491,9 +491,9 @@
 
 <body>
     <a href="html-cart.html#main-content" class="skip-link">Skip to main content</a>
-    <!-- Google Tag Manager (noscript) -->
+    
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCFWH7NT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    
 
     <header class="masthead" role="banner">
         <div class="logo-container">
@@ -514,7 +514,7 @@
         </div>
     </header>
 
-    <!-- Sidenav (Hamburger Menu) -->
+    
     <div id="mySidenav" class="sidenav" role="navigation" aria-label="Main Navigation" aria-live="polite">
         <a href="../../index.html" aria-label="Toronto Cupcake's home page">HOME</a>
         <a href="../../about.html" aria-label="About Toronto Cupcake">ABOUT</a>
@@ -554,10 +554,10 @@
   </div>
     </main>
 
-<!-- Footer Section  -->
+
 <footer class="footer" role="contentinfo">
     <div class="footer-container">
-        <!-- Quick Navigation -->
+        
         <div class="footer-nav">
             <a href="../../index.html" aria-label="Home Page">Home</a>
             <a href="../../about.html" aria-label="About Toronto Cupcake">About</a>
@@ -569,7 +569,7 @@
             <a href="https://www.torontocupcake.com/cgi-bin/html-cart/EmploymentOpportunites.html" aria-label="Employment Opportunities">Careers</a>
         </div>
         <button class="btn" id="contrast-toggle" aria-pressed="false" aria-label="Toggle high contrast mode">Toggle High Contrast</button>
-        <!-- Social Media (optional) -->
+        
         <div class="footer-social">
             <a href="https://www.instagram.com/torontocupcake/" target="_blank">
                 <img src="../../images/instagram-white.webp" alt="Instagram">
@@ -578,22 +578,21 @@
                 <img src="../../images/Bluesky_Logo.png" alt="Blue Sky">
             </a>
 
-            <!-- Add other social media icons if needed -->
+            
         </div>
         
-        <!-- Copyright -->
+        
         <div class="footer-copyright">
             &copy; 2024 Toronto Cupcake. All rights reserved.
         </div>
     </div>
 </footer>
 
-    <!-- Scripts -->
+    
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             console.log('Scripts loaded: DOMContentLoaded event fired');
         
-            // Utility: Apply high contrast mode
             function setupContrastToggle() {
                 const contrastToggle = document.getElementById('contrast-toggle');
                 const body = document.body;
@@ -632,7 +631,6 @@
                 });
             }
     
-                    // Sidenav Setup
             function setupSidenav() {
             const sidenav = document.getElementById('mySidenav');
             const openNavButton = document.querySelector('.openNav');
@@ -666,7 +664,6 @@
                 });
             });
 
-            // Close sidenav when clicking outside or on a regular link (except submenu toggles)
             document.addEventListener('click', function (event) {
                 const isSubmenuToggle = event.target.closest('.submenu-toggle');
                 if (!sidenav.contains(event.target) && !event.target.closest('.openNav') && !isSubmenuToggle) {
@@ -681,7 +678,6 @@
             });
             }
         
-            // Utility: Lazy loading for images
             function setupLazyLoading() {
                 const images = document.querySelectorAll('img[data-src]');
                 const observer = new IntersectionObserver((entries) => {
@@ -697,7 +693,6 @@
                 images.forEach((img) => observer.observe(img));
             }
         
-            // Utility: Accordion functionality
             function setupAccordion() {
                 document.querySelectorAll('.accordion-btn').forEach((button) => {
                     button.addEventListener('click', () => {
@@ -709,14 +704,12 @@
                 });
             }
         
-            // Utility: Update Toronto date and time
             function updateDateTime() {
                 const options = { timeZone: 'America/Toronto', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
                 const now = new Date().toLocaleString('en-CA', options);
                 document.querySelector('.date-text').textContent = `${now} - Toronto`;
             }
         
-            // Initialize all utilities
             setupContrastToggle();
             setupSidenav();
             setupLazyLoading();
@@ -750,10 +743,8 @@
                 const errorMessage = document.getElementById('datepickerError');
                 const form = document.querySelector('form'); // Update with your form's ID if necessary
         
-                // Regex pattern for expected date format: "Friday, January 24, 2025"
                 const dateFormatRegex = /^[A-Za-z]+,\s[A-Za-z]+\s\d{1,2},\s\d{4}$/;
         
-                // Initialize datepicker
                 datepickerField.datepicker({
                     dateFormat: 'DD, MM d, yy',
                     beforeShowDay: isDateDisabled,
@@ -765,33 +756,26 @@
                     }
                 });
         
-                // Adjust datepicker for responsiveness
                 window.addEventListener('resize', () => {
                     datepickerField.datepicker('option', 'numberOfMonths', window.innerWidth < 768 ? 1 : 2);
                 });
         
-                // Validate the date format on form submission
                 form.addEventListener('submit', (event) => {
                     const dateValue = datepickerField.val().trim();
         
                     if (!dateFormatRegex.test(dateValue)) {
-                        // Show error message
                         errorMessage.textContent = 'Please select a valid date in the format: Day, Month Date, Year.';
                         errorMessage.style.display = 'inline';
         
-                        // Add visual cue (red border) and focus on the field
                         datepickerField.addClass('error-highlight').focus();
         
-                        // Prevent form submission
                         event.preventDefault();
                     } else {
-                        // Hide error if the date is valid
                         errorMessage.style.display = 'none';
                         datepickerField.removeClass('error-highlight'); // Remove highlight
                     }
                 });
         
-                // Hide error when refocusing on the date field
                 datepickerField.on('focus', function () {
                     errorMessage.style.display = 'none';
                     datepickerField.removeClass('error-highlight'); // Remove highlight
@@ -800,14 +784,11 @@
         </script>
 <script>
     function toggleFields() {
-        // Get the selected option for Pickup_Status
         const isDeliverySelected = document.querySelector('input[name="Pickup_Status"][value="Deliver"]').checked;
         
-        // Get the delivery and pickup sections
         const deliveryTimeSection = document.getElementById("delivery-time-section");
         const pickupTimeSection = document.getElementById("pickup-time-section");
 
-        // Show/hide sections based on the selected radio button
         if (isDeliverySelected) {
             deliveryTimeSection.style.display = "block";
             pickupTimeSection.style.display = "none";
@@ -817,10 +798,9 @@
         }
     }
 
-    // Initialize the correct visibility on page load
     document.addEventListener('DOMContentLoaded', toggleFields);
 </script>
-<!-- Tawk -->
+
 <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
@@ -832,7 +812,7 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>  
-<!-- End of Tawk -->
+
     <datalist id="countries">
         <option value="Canada"></option>
         <option value="United States"></option>

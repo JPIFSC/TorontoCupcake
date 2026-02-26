@@ -1,6 +1,6 @@
-/* Basic Styles */
+
 html {
-    font-size: 16px; /* Base font size for the whole site */
+    font-size: 16px; 
 }
 :root {
     --tc-primary: #8C1822;
@@ -15,7 +15,7 @@ html {
 body {
     font-family: Tahoma, Arial, sans-serif;
     margin: 0 50px;
-    box-sizing: border-box; /* Ensure padding/margins don�t break layouts */
+    box-sizing: border-box; 
     background-color: var(--tc-soft);
     background-image:
         radial-gradient(circle at 15% 10%, rgba(217, 146, 85, 0.22) 0%, rgba(217, 146, 85, 0) 35%),
@@ -24,7 +24,7 @@ body {
     background-attachment: fixed;
 }
 .text-primary {color: var(--tc-primary); }
-/* Centering Elements */
+
 .center {
     display: block;
     margin-left: auto;
@@ -32,7 +32,7 @@ body {
     text-align: center;
 }
 
-/* Headers */
+
 h1, h2, h3, h4 {
     font-family: Tahoma, Arial, sans-serif;
     font-weight: 500;
@@ -44,44 +44,44 @@ h3, h4 {
     color: var(--tc-secondary);
 }
 
-/* Font Size Classes */
+
 .fontsize8 { font-size: 14px;}
 .fontsize18 { font-size: 18px; }
 .fontsize2 { font-size: 2rem; }
 .fontsize2-5 { font-size: 2.5rem; }
 .fontsize3 { font-size: 3rem; }
 
-/* Body Text */
+
 body, p {
     font-size: 1rem;
     line-height: 1.5;
     color: var(--tc-secondary);
 }
 
-/* Letter Spacing */
+
 .wide-medium { letter-spacing: .2rem; }
 .wide-large { letter-spacing: .6rem; }
 
-/* Links */
-/* Default link color */
+
+
 a {
     color: var(--tc-primary);
     text-decoration: none;
 }
 
-/* On hover, keep a visual cue */
+
 a:hover {
     color: var(--tc-secondary);
     text-decoration: underline;
 }
 
 
-/* Content */
+
 .content {
-    margin-top: 80px; /* Push content down to avoid overlap */
+    margin-top: 80px; 
 }
 
-/* Masthead Styles */
+
 .masthead {
     text-align: center;
     background-color: var(--tc-surface);
@@ -94,14 +94,14 @@ a:hover {
     margin: 12px auto 8px;
 }
 
-/* Logo Container */
+
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
     max-width: 100%;
     margin: 2px auto 14px;
-    overflow: hidden; /* Prevent wrapping */
+    overflow: hidden; 
 }
 .logo {
     height: 50px;
@@ -133,7 +133,7 @@ a:hover {
     line-height: 1.6;
 }
 
-/* Pink Bar */
+
 .pink-bar {
     display: flex;
     align-items: center;
@@ -154,12 +154,12 @@ a:hover {
 
 @media (max-width: 768px) {
     .pink-bar {
-        width: 95%; /* Adjust width for smaller screens */
-        margin: 0 auto; /* Center align */
+        width: 95%; 
+        margin: 0 auto; 
     }
 }
 
-/* Additional Media Queries */
+
 @media (max-width: 600px) {
     .pink-bar {
         width: 95%;
@@ -168,7 +168,7 @@ a:hover {
     }
 }
 
-/* Hamburger Icon */
+
 .openNav {
     position: absolute;
     left: 10px;
@@ -180,14 +180,14 @@ a:hover {
     z-index: 1001;
 }
 
-/* Date Text */
+
 .date-text, .promo-text {
     margin: 0;
     width: 90%;
     color: var(--tc-soft);
 }
 
-/* Promo Text */
+
 .promo-text a {
     text-decoration: none;
     color: var(--tc-soft);
@@ -199,10 +199,10 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Tablet and Mobile View - Hide 4 logos */
+
 @media (max-width: 1200px) {
     .logo-container img:nth-child(n+5) {
-        display: none; /* Hide logos 5-8 on screens smaller than 1200px */
+        display: none; 
     }
     .logo-container {
         justify-content: center;
@@ -212,10 +212,10 @@ a:hover {
 
 @media (max-width: 992px) {
     .logo-container img:nth-child(n+5) {
-        display: none; /* Keep logos 5-8 hidden */
+        display: none; 
     }
     .logo-container {
-        max-width: 100%; /* Stretch the container to the width of the screen */
+        max-width: 100%; 
         justify-content: center;
     }
 }
@@ -233,7 +233,7 @@ a:hover {
         width: 100%;
     }
 
-/* Mobile & Tablet View Adjustments */
+
 @media (max-width: 600px) {
     .pink-bar {
         width: 95%;
@@ -274,7 +274,7 @@ a:hover {
     }
 }
 
-/* Tablet View Adjustments */
+
 @media (min-width: 601px) and (max-width: 992px) {
     .pink-bar {
         width: 95%;
@@ -283,7 +283,7 @@ a:hover {
     }
 }
 
-/* Sidenav */
+
 .sidenav {
     height: calc(100% - 120px);
     top: 108px;
@@ -394,15 +394,15 @@ a:hover {
     width: 232px;
 }
 .sidenav-open .openNav {
-    display: none; /* Hide hamburger */
+    display: none; 
 }
 .sidenav .submenu-parent {
     position: relative;
 }
 .sidenav .submenu-parent a {
-    font-size: 18px; /* Match other links */
+    font-size: 18px; 
     color: var(--tc-soft);
-    font-weight: normal; /* Remove bold style if applied */
+    font-weight: normal; 
 }
 .sidenav .submenu-toggle, .sidenav .submenu li a {
     font-size: 15px;
@@ -447,10 +447,10 @@ a:hover {
     .sidenav .submenu {
         position: relative;
         left: 0;
-        width: 100%; /* Ensure it doesn't exceed the sidenav width */
+        width: 100%; 
     }
 }
-/* Footer Styles */
+
 .footer {
     background-color: rgba(89, 2, 34, 0.96);
     color: white;
@@ -530,7 +530,7 @@ iframe[title*="chat" i] {
     box-shadow: 0 4px 14px rgba(89, 2, 34, 0.08);
 }
 
-/* Button Styles */
+
 .btn, .order-now-btn, .add-to-cart-btn, .place-order-btn, .update-btn, .confirm-order-btn, .submit-btn, .clear-btn {
     background-color: var(--tc-primary);
     color: white;
@@ -610,46 +610,46 @@ iframe[title*="chat" i] {
     display: none;
 }
 
-/* Grid System */
-/* Grid Container for Two-Column Layout */
+
+
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Default to two equal columns */
-    gap: 20px; /* Space between items */
-    align-items: start; /* Align items to the start of the row */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    align-items: start; 
 }
 
-/* Ensure Single Column on Smaller Screens */
+
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: 1fr; /* Single column layout */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Optional: Add a Specific Class for Three Columns if Needed */
+
 .grid-container-three-column {
-    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-    gap: 20px; /* Space between items */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
 @media (max-width: 992px) {
     .grid-container-three-column {
-        grid-template-columns: 1fr 1fr; /* Two columns on medium screens */
+        grid-template-columns: 1fr 1fr; 
     }
 }
 
 @media (max-width: 768px) {
     .grid-container-three-column {
-        grid-template-columns: 1fr; /* Single column layout on small screens */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Unvisited link */
+
 .order-number-link:link {
     color: var(--tc-primary);
 }
 
-/* Visited link */
+
 .order-number-link:visited {
     color: black;
 }
@@ -657,14 +657,14 @@ iframe[title*="chat" i] {
 
 
 
-/* General high-contrast mode styles */
+
 body.high-contrast {
     color: black !important;
     background-color: white !important;
     font-family: Arial, sans-serif;
 }
 
-/* Links in high contrast mode */
+
 body.high-contrast a {
     color: black !important;
     text-decoration: underline !important;
@@ -677,7 +677,7 @@ body.high-contrast a:focus {
     outline: 2px solid white !important;
 }
 
-/* Buttons in high contrast mode */
+
 body.high-contrast .btn {
     background-color: black !important;
     color: white !important;
@@ -690,19 +690,19 @@ body.high-contrast .btn:focus {
     outline: 2px solid black !important;
 }
 
-/* High contrast text-primary styles */
+
 body.high-contrast .text-primary {
     color: black !important;
 }
 
-/* Prefers-contrast media query for text-primary */
+
 @media (prefers-contrast: more) {
     .text-primary {
-        color: black !important; /* Override default */
+        color: black !important; 
     }
 }
 
-/* Combine high-contrast styles for text-primary and links */
+
 body.high-contrast .text-primary, 
 body.high-contrast a {
     color: black !important;
@@ -711,13 +711,13 @@ body.high-contrast a {
     outline: none !important;
 }
 
-/* Footer links in high contrast mode */
+
 body.high-contrast .footer-nav a {
     color: white !important;
     text-decoration: underline !important;
 }
 
-/* Footer links hover and focus in high contrast mode */
+
 body.high-contrast .footer-nav a:hover,
 body.high-contrast .footer-nav a:focus {
     background-color: black !important;
@@ -725,46 +725,46 @@ body.high-contrast .footer-nav a:focus {
     outline: 2px solid white !important;
 }
 
-/* Add other necessary elements or overrides as needed */
+
 
 .text-large {
-    font-size: 1.25rem; /* Equivalent to w3-large */
+    font-size: 1.25rem; 
 }
 
 .text-medium {
-    font-size: 1rem; /* Equivalent to w3-medium */
+    font-size: 1rem; 
 }
 
 
-/* Image Styles */
+
 .rounded-img {
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
 }
 
-/* Section Styling */
+
 .section {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-/* Slideshow Container */
+
 .slideshow-container {
     position: relative;
     max-width: 100%;
     margin: auto;
-    overflow: hidden; /* Hide anything that extends outside */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
     border-radius: 10px;
 }
 
-/* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
-/* Fading animation */
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -775,7 +775,7 @@ body.high-contrast .footer-nav a:focus {
     to {opacity: 1}
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -800,7 +800,7 @@ body.high-contrast .footer-nav a:focus {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* The dots/circles */
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -816,7 +816,7 @@ body.high-contrast .footer-nav a:focus {
     background-color: var(--tc-highlight);
 }
 
-/* Text position */
+
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -827,21 +827,21 @@ body.high-contrast .footer-nav a:focus {
     text-align: center;
 }
 
-/* Colour Overrides */
-.color-black {color: #000000; }/* Black */
+
+.color-black {color: #000000; }
 .color-pink {color: var(--tc-primary); }
 .color-darkgray {color: var(--tc-secondary); }
 
-/* Generic two-column layout */
+
 .two-column-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Space between the columns */
-    padding: 20px; /* Padding around the grid */
-    align-items: start; /* Align items at the top */
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 20px; 
+    align-items: start; 
 }
 
-/* Left image/video, right text */
+
 .image-left-text-right .image-column {
     order: 1;
 }
@@ -849,7 +849,7 @@ body.high-contrast .footer-nav a:focus {
     order: 2;
 }
 
-/* Left text, right image/video */
+
 .text-left-image-right .text-column {
     order: 1;
 }
@@ -857,120 +857,120 @@ body.high-contrast .footer-nav a:focus {
     order: 2;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .two-column-layout {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr; 
     }
     .image-column, .text-column {
-        order: 0; /* Reset order on mobile */
+        order: 0; 
     }
 }
 
-/* General three-column layout */
+
 .three-column-layout {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Set columns with 1/3 and 2/3 width */
-    gap: 20px; /* Space between columns */
-    padding: 20px; /* Optional padding around the grid */
-    align-items: start; /* Align items at the start */
+    grid-template-columns: 1fr 2fr; 
+    gap: 20px; 
+    padding: 20px; 
+    align-items: start; 
 }
 
-/* Specific adjustments for columns */
+
 .one-third-two-third .column-1 {
-    grid-column: span 1; /* First column spans one grid unit */
+    grid-column: span 1; 
 }
 
 .one-third-two-third .column-2 {
-    grid-column: span 1; /* Second column spans one grid unit */
+    grid-column: span 1; 
 }
 
 
-/* For three equal columns */
+
 .three-equal-columns {
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+    grid-template-columns: 1fr 1fr 1fr; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
     .three-column-layout {
-        grid-template-columns: 1fr; /* Single column layout on mobile */
+        grid-template-columns: 1fr; 
     }
     .one-third-two-third .column-1,
     .one-third-two-third .column-2 {
-        grid-column: span 1; /* Each column takes full width */
+        grid-column: span 1; 
     }
 }
 
-/* Override potential conflicts */
+
 .grid-container, .grid-item {
-    display: initial; /* Reset display to avoid flex or other properties */
+    display: initial; 
     margin: 0;
     padding: 0;
 }
-/* Ensure image fills the column */
+
 .column-1 .rounded-img {
-    width: 100%; /* Image will take up the full width of the column */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Prevent image from exceeding its container */
-    display: block; /* Remove inline-block spacing issue */
-    object-fit: cover; /* Cover container while maintaining aspect ratio */
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    display: block; 
+    object-fit: cover; 
 }
 
-/* Optimized Grid Container for Corporate Events */
+
 .corpevent-special-grid-container {
-    display: grid; /* Use grid for more control */
-    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
-    gap: 20px; /* Space between grid items */
-    margin: 20px 0; /* Margin around the grid */
-    padding: 20px; /* Optional padding */
-    align-items: start; /* Align items at the start */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    margin: 20px 0; 
+    padding: 20px; 
+    align-items: start; 
 }
 
 @media (max-width: 768px) {
     .corpevent-special-grid-container {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr; 
     }
 }
 
-/* Image Styles for Logos in the Corporate Section */
+
 .sample-logo-image {
     width: 150px;
-    float: left; /* Float image left to wrap text */
+    float: left; 
     margin-right: 15px;
-    margin-bottom: 10px; /* Adjusted for better spacing */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); 
 }
 .justified-text {
     text-align: justify;
-    hyphens: auto; /* Allows for word breaks, reducing gaps */
-    text-align-last: left; /* Ensures the last line is left-aligned */
+    hyphens: auto; 
+    text-align-last: left; 
     margin-right:5%;
     margin-left:5%;
 }
-/* Grid container for FAQs */
+
 .faq-grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Three columns for FAQs */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
     padding: 20px;
 }
-/* Tablet view - 2 columns */
+
 @media (max-width: 992px) {
     .faq-grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 
-/* Mobile view - 1 column */
+
 @media (max-width: 768px) {
     .faq-grid-container {
-        grid-template-columns: 1fr; /* 1 column */
+        grid-template-columns: 1fr; 
     }
 }
-/* Responsive Image */
-/* Ensure images and iframes are responsive */
+
+
 .responsive-image,
 .map-responsive iframe {
     max-width: 100%;
@@ -980,7 +980,7 @@ body.high-contrast .footer-nav a:focus {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* Aspect ratio for a 16:9 map */
+    padding-bottom: 56.25%; 
     margin: 20px 0;
 }
 
@@ -992,13 +992,13 @@ body.high-contrast .footer-nav a:focus {
     height: 100%;
     border: 0;
 }
-/* Make the map container responsive */
-/* Map wrapper adjustments */
+
+
 .map-responsive {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* Aspect ratio for 16:9 */
+    padding-top: 56.25%; 
 }
 
 .map-responsive iframe {
@@ -1009,10 +1009,10 @@ body.high-contrast .footer-nav a:focus {
     height: 100%;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
     .map-responsive {
-        padding-bottom: 75%; /* Adjust aspect ratio for smaller screens */
+        padding-bottom: 75%; 
     }
 }
 .skip-link {
@@ -1030,50 +1030,50 @@ body.high-contrast .footer-nav a:focus {
     top: 0;
     outline: none;
 }
-/* Default layout: Text next to the image */
+
 .resource-container {
     display: flex;
-    align-items: center; /* Vertically centers the text relative to the image */
-    justify-content: flex-start; /* Ensures the image and text stay aligned to the left */
+    align-items: center; 
+    justify-content: flex-start; 
 }
 
 .resource-container img {
-    margin-right: 20px; /* Adjust the space between the image and the text */
+    margin-right: 20px; 
 }
 
 .resource-container p {
-    flex: 1; /* Ensures the paragraph takes up the remaining space */
+    flex: 1; 
     margin: 0;
 }
 
-/* Media query for smaller screens: Stack the image and text */
+
 @media (max-width: 768px) {
     .resource-container {
-        flex-direction: column; /* Stack the image and text vertically */
-        align-items: flex-start; /* Align items to the left */
+        flex-direction: column; 
+        align-items: flex-start; 
     }
 
     .resource-container img {
         margin-right: 0;
-        margin-bottom: 15px; /* Add space between the image and text */
+        margin-bottom: 15px; 
     }
 }
 .grid-container-six-column {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Six equal columns on desktop */
+    grid-template-columns: repeat(6, 1fr); 
     gap: 20px;
 }
 @media (max-width: 992px) {
     .grid-container-six-column {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
 @media (max-width: 768px) {
     .grid-container-six-column {
-        grid-template-columns: 1fr; /* Single column on mobile */
+        grid-template-columns: 1fr; 
     }
 }
-/* Modal styling */
+
 .modal {
     display: flex;
     align-items: center;
@@ -1083,20 +1083,20 @@ body.high-contrast .footer-nav a:focus {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
     z-index: 1000;
 }
 
-/* Modal content box */
+
 .modal-content {
     background: white;
     border-radius: 10px;
     padding: 20px;
-    max-width: 600px; /* Maximum width for the modal */
+    max-width: 600px; 
     text-align: center;
 }
 
-/* Arrange images horizontally inside modal */
+
 .image-container {
     display: flex;
     gap: 20px;
@@ -1105,22 +1105,22 @@ body.high-contrast .footer-nav a:focus {
 }
 
 .modal-image {
-    width: 160px; /* Fixed width for consistency */
+    width: 160px; 
     border-radius: 8px;
 }
 
-/* Close instruction text */
+
 .modal-close-text {
     font-size: 12px;
     color: #666;
     margin-top: 10px;
 }
-/* Center the QTY and input field together */
+
 .quantity-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the label and input horizontally */
-    gap: 5px; /* Space between QTY label and input */
+    justify-content: center; 
+    gap: 5px; 
     margin-bottom: 10px;
 }
 
@@ -1129,17 +1129,17 @@ body.high-contrast .footer-nav a:focus {
 }
 
 .qty-label {
-    margin: 0; /* Remove any unnecessary margin */
+    margin: 0; 
 }
 .grid-item img.rounded-img {
-    background-color: transparent; /* No background initially */
-    transition: background-color 0.3s ease; /* Smooth transition for background */
-    cursor: default; /* Default cursor */
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+    cursor: default; 
 }
 
 .grid-item img.rounded-img:hover {
-    background-color: #f0f0f0; /* Light grey background on hover */
-    cursor: zoom-in; /* Magnifying glass cursor */
+    background-color: #f0f0f0; 
+    cursor: zoom-in; 
 }
 .modal[style*="display: flex"] {
     opacity: 0;
@@ -1150,38 +1150,38 @@ body.high-contrast .footer-nav a:focus {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-/* Image hover effect and cursor */
-/* Hide border until hover and adjust hover cursor */
+
+
 .cupcake-image {
     background-color: transparent;
-    border: 2px solid transparent; /* Initially transparent border */
-    border-radius: 10px; /* Matches rounded corners */
-    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+    border: 2px solid transparent; 
+    border-radius: 10px; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
 }
 
 .cupcake-image:hover {
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    cursor: zoom-in; /* Magnifying glass cursor */
+    border-radius: 10px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    cursor: zoom-in; 
 }
 .input-box {
     border: 2px solid var(--tc-primary);
     background-color: transparent;
     padding: 10px;
     border-radius: 7px;
-    box-shadow: 0px 4px 8px rgba(110, 110, 110, 0.2); /* Light gray shadow */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0px 4px 8px rgba(110, 110, 110, 0.2); 
+    transition: all 0.3s ease; 
     font-size: 16px;
-    color: #333; /* Text color */
-    width: 100%; /* Full width */
-    max-width: 300px; /* Limit width */
+    color: #333; 
+    width: 100%; 
+    max-width: 300px; 
     outline: none;
-    margin: 0px 10px; /* Add margin to the bottom of element */
+    margin: 0px 10px; 
 }
 
 .input-box:hover, .input-box:focus {
     border: 3px solid var(--tc-highlight);
-    box-shadow: 0px 6px 12px rgba(97, 97, 97, 0.3); /* Slightly darker gray shadow */
+    box-shadow: 0px 6px 12px rgba(97, 97, 97, 0.3); 
     outline: 2px solid var(--tc-highlight);
 }
 .frosting-spinner {
@@ -1189,7 +1189,7 @@ body.high-contrast .footer-nav a:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;  /* Adjust size */
+    width: 100px;  
     height: 100px;
     z-index: 1000;
     display: none;
@@ -1230,7 +1230,7 @@ body.high-contrast .footer-nav a:focus {
     }
 }
 #announcement-modal {
-    display: none; /* Initially hidden */
+    display: none; 
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1247,12 +1247,12 @@ body.high-contrast .footer-nav a:focus {
     border: 5px solid var(--tc-primary);
 }
 
-/* Display modal when active */
+
 #announcement-modal.show {
     display: block;
 }
 
-/* Modal content */
+
 .modal-content {
     position: relative;
     text-align: left;
@@ -1261,14 +1261,14 @@ body.high-contrast .footer-nav a:focus {
     padding: 20px;
 }
 
-/* Modal title */
+
 .modal-content h2 {
     font-size: 22px;
     margin-bottom: 10px;
     color: var(--tc-primary);
 }
 
-/* Close button */
+
 .modal-close {
     position: absolute;
     top: 10px;
@@ -1283,7 +1283,7 @@ body.high-contrast .footer-nav a:focus {
     color: var(--tc-secondary);
 }
 
-/* Scrollable content for long messages */
+
 #announcement-text {
     font-size: 16px;
     line-height: 1.5;
@@ -1292,7 +1292,7 @@ body.high-contrast .footer-nav a:focus {
     padding-right: 10px;
 }
 
-/* Announcement banner */
+
 #announcement-banner {
     display: none;
     background-color: var(--tc-primary);
@@ -1309,7 +1309,7 @@ body.high-contrast .footer-nav a:focus {
     background-color: var(--tc-secondary);
 }
 
-/* RESPONSIVE DESIGN - Mobile Adjustments */
+
 @media (max-width: 600px) {
     #announcement-modal {
         width: 90%;
@@ -1342,7 +1342,7 @@ body.high-contrast .footer-nav a:focus {
     }
 }
 
-/* Utility Classes */
+
 .uppercase { text-transform: uppercase; }
 .margin-small { margin: 10px; }
 .margin-medium { margin: 20px; }

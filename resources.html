@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
+    
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TCFWH7NT');</script>
-    <!-- End Google Tag Manager -->
+    
     <meta charset="UTF-8">
     <meta name="description" content="A resource page for all things Toronto Cupcake, featuring links to helpful tools and articles for your baking and business needs.">
     <meta name="keywords" content="Toronto Cupcake resources, baking tips, cupcake tutorials, baking tools">
@@ -31,7 +31,7 @@
     <link rel="apple-touch-icon" href="apple_touch_icon_180x180.png" sizes="180x180" />
     <link rel="apple-touch-icon-precomposed" href="apple_touch_icon_180x180.png" sizes="180x180" />
 
-    <!-- Schema for SEO: Organization -->
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,7 +48,7 @@
     }
     </script>
 
-    <!-- Schema for SEO: LocalBusiness with Postal Codes -->
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -129,9 +129,9 @@
 
 <body>
     <a href="resources.html#main-content" class="skip-link">Skip to main content</a>
-    <!-- Google Tag Manager (noscript) -->
+    
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCFWH7NT" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    
 
     <header class="masthead" role="banner">
         <div class="logo-container">
@@ -146,13 +146,13 @@
         </div>
 
         <div class="pink-bar">
-            <span class="openNav" aria-label="Open Navigation">&#9776;</span> <!-- Hamburger icon -->
+            <span class="openNav" aria-label="Open Navigation">&#9776;</span> 
             <span class="date-text"></span>
             <span class="promo-text"><a href="resources.html#" aria-label="Check out our new Corporate event logo cupcakes">Check out our new Corporate event logo cupcakes</a></span>
         </div>
     </header>
 
-    <!-- Sidenav (Hamburger Menu) -->
+    
     <div id="mySidenav" class="sidenav" role="navigation" aria-label="Main Navigation" aria-live="polite">
         <a href="index.html" aria-label="Toronto Cupcake's home page">HOME</a>
         <a href="about.html" aria-label="About Toronto Cupcake">ABOUT</a>
@@ -227,10 +227,10 @@
             </div>
         </section>
     </main>
-<!-- Footer Section  -->
+
 <footer class="footer" role="contentinfo">
     <div class="footer-container">
-        <!-- Quick Navigation -->
+        
         <div class="footer-nav">
             <a href="index.html" aria-label="Home Page">Home</a>
             <a href="about.html" aria-label="About Toronto Cupcake">About</a>
@@ -242,7 +242,7 @@
             <a href="EmploymentOpportunities.html" aria-label="Employment Opportunities">Careers</a>
         </div>
         <button class="btn" id="contrast-toggle" aria-pressed="false" aria-label="Toggle high contrast mode">Toggle High Contrast</button>
-        <!-- Social Media (optional) -->
+        
         <div class="footer-social">
             <a href="https://www.instagram.com/torontocupcake/" target="_blank">
                 <img src="images/instagram-white.webp" alt="Instagram">
@@ -250,22 +250,20 @@
             <a href="https://bsky.app/profile/torontocupcake.bsky.social" target="_blank">
               <img src="images/Bluesky_Logo.png" alt="Blue Sky">
             </a>
-            <!-- Add other social media icons if needed -->
+            
         </div>
         
-        <!-- Copyright -->
+        
         <div class="footer-copyright">
             &copy; 2024 Toronto Cupcake. All rights reserved.
         </div>
     </div>
   </footer>
   
-    <!-- Scripts -->
+    
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-          // console.log('Scripts loaded: DOMContentLoaded event fired');
     
-          // High Contrast Toggle
           function setupContrastToggle() {
               const contrastToggle = document.getElementById('contrast-toggle');
               const body = document.body;
@@ -278,7 +276,6 @@
               const prefersHighContrast = window.matchMedia('(prefers-contrast: more)');
     
               function applyHighContrast(isHighContrast) {
-                  // console.log(`Applying high contrast: ${isHighContrast}`);
                   if (isHighContrast) {
                       body.classList.add('high-contrast');
                       localStorage.setItem('high-contrast', 'true');
@@ -309,7 +306,6 @@
                   }
               });
           }
-          // Sidenav Setup
           function setupSidenav() {
               const sidenav = document.getElementById('mySidenav');
               const openNavButton = document.querySelector('.openNav');
@@ -337,7 +333,6 @@
               });
           }
     
-          // Lazy Loading Setup
           function setupLazyLoading() {
               const images = document.querySelectorAll('img[data-src]');
               if (!images.length) return;
@@ -355,7 +350,6 @@
               images.forEach((img) => observer.observe(img));
           }
     
-          // Accordion Setup
           function setupAccordion() {
                 var accordionButtons = document.querySelectorAll('.accordion-btn');
 
@@ -372,7 +366,6 @@
                 });
             }
     
-          // Date and Time Display
           function setupDateTimeDisplay() {
               const dateTextElement = document.querySelector('.date-text');
               if (!dateTextElement) return;
@@ -389,7 +382,6 @@
               dateTextElement.textContent = `${now} - Toronto`;
           }
     
-          // Modal Setup
           function setupModal() {
               document.addEventListener('click', function (event) {
                   const modals = document.querySelectorAll('.modal');
@@ -401,7 +393,6 @@
               });
           }
     
-          // Initialize all features
           setupContrastToggle();
           setupSidenav();
           setupLazyLoading();
@@ -413,7 +404,6 @@
       
   <script>
   
-        // Tawk.to live chat script
         var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
         (function(){
         var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];

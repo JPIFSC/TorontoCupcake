@@ -1,0 +1,84 @@
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 4rem;
+  transition: background 0.4s, padding 0.4s;
+}
+
+nav.scrolled {
+  background: rgba(253, 246, 240, 0.92);
+  backdrop-filter: blur(12px);
+  padding: 0.9rem 4rem;
+  border-bottom: 1px solid rgba(140, 24, 34, 0.1);
+}
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--crimson);
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+.nav-logo span {
+  color: var(--orange);
+  font-style: italic;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.66rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dark);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; left: 0;
+  width: 0; height: 1px;
+  background: var(--coral);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--crimson);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-cta {
+  background: var(--crimson);
+  color: #fff !important;
+  padding: 0.6rem 1.5rem;
+  border-radius: 2px;
+  letter-spacing: 0.1em;
+  font-size: 0.75rem !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+
+.nav-cta:hover {
+  background: var(--burgundy) !important;
+  transform: translateY(-1px);
+}
+
+.nav-cta::after {
+  display: none !important;
+}

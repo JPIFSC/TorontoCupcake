@@ -1,3 +1,32 @@
+@media (max-width: 1200px) {
+  nav {
+    padding: 0.95rem 1.4rem;
+    gap: 1rem;
+  }
+
+  nav.scrolled {
+    padding: 0.75rem 1.4rem;
+  }
+
+  .nav-logo {
+    font-size: 1.05rem;
+  }
+
+  .nav-links {
+    gap: 0.7rem;
+  }
+
+  .nav-links a {
+    font-size: 0.64rem;
+    letter-spacing: 0.07em;
+  }
+
+  .nav-cta {
+    padding: 0.58rem 0.95rem;
+    font-size: 0.64rem !important;
+  }
+}
+
 @media (max-width: 900px) {
 
   .hero {
